@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/username"
+
+        android:layout_width="@dimen/width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/twenty_margin"
+        android:background="@drawable/edittext_outline_background"
+        android:hint="@string/userName"
+        android:padding="@dimen/twenty_margin" />
+
+
+    <RelativeLayout
+        android:id="@+id/take_pic_button"
+        android:layout_width="@dimen/width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/secondary_button_background"
+        android:padding="@dimen/twenty_margin"
+        android:onClick="onConnectClicked">
+
+        <ImageView
+            android:id="@+id/right_icon_take_pic"
+            android:layout_width="@dimen/thirty_margin"
+            android:layout_height="@dimen/thirty_margin"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/button_right_arrow" />
+
+        <TextView
+            android:id="@+id/text_take_pic"
+            style="@style/WhiteHeadingStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten_margin"
+            android:text="@string/connectToAppwarp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

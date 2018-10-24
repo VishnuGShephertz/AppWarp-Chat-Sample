@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/registration_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/ten_margin">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="@dimen/fourty_margin"
+            android:layout_height="@dimen/fourty_margin"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back_arrow_orange" />
+
+        <TextView
+            android:id="@+id/txtHeading"
+            style="@style/WhiteWelcomeHeadingStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgLogo"
+            android:gravity="center"
+            android:text="@string/login" />
+
+    </RelativeLayout>
+    <include
+        android:id="@+id/content_registration"
+        layout="@layout/content_registration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/registration_header" />
+
+
+
+</RelativeLayout>
